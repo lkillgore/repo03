@@ -6,6 +6,8 @@
 trigger:
   - master
 
+pool: default
+
 steps:
 - script: echo Hello, world! > test.txt
 - task: PublishPipelineArtifact@1
