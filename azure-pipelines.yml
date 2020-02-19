@@ -13,10 +13,10 @@ steps:
   displayName: 'Run a one-line script'
 
 - task: PublishBuildArtifacts@1
- inputs:
-   PathtoPublish: 'test.txt'
-   ArtifactName: 'drop'
-   publishLocation: 'Container'
+  inputs:
+    PathtoPublish: 'test.txt'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 
 # - task: PublishPipelineArtifact@1
 #   inputs:
