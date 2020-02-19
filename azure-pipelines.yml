@@ -12,14 +12,14 @@ steps:
 - script: echo Hello, world! > test.txt
   displayName: 'Run a one-line script'
 
-#- task: PublishBuildArtifacts@1
-#  inputs:
-#    PathtoPublish: 'test.txt'
-#    ArtifactName: 'drop'
-#    publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+ inputs:
+   PathtoPublish: 'test.txt'
+   ArtifactName: 'drop'
+   publishLocation: 'Container'
 
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: 'test.txt'
-    artifact: 'test.txt'
-    publishLocation: 'pipeline'
+# - task: PublishPipelineArtifact@1
+#   inputs:
+#     targetPath: 'test.txt'
+#     artifact: 'test.txt'
+#     publishLocation: 'pipeline'
